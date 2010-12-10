@@ -19,4 +19,13 @@
     <servlet-name>HelloWorld</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+  <filter>
+    <display-name>MemcachedFilter</display-name>
+    <filter-name>MemcachedFilter</filter-name>
+    <filter-class>com.franciscosouza.java.memcached.MemcachedFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MemcachedFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
